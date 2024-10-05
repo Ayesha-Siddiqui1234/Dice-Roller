@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dice Roller</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Dice Roller</h1>
+        
+        <!-- Display for dice rolls -->
+        <div class="dice-container">
+            <div class="dice-display">
+                <p class="player1">Player 1</p>
+                <img class="img1" src="./dice6.png" alt="dice6">
+            </div>
+            <div class="dice-display">
+                <p class="player2">Player 2</p>
+                <img class="img2" src="./dice6.png" alt="dice5">
+            </div>
+        </div>
+
+        <!-- Buttons for rolling dice and editing names -->
+        <div class="container bottom">
+            <button type="button" class="btn" onclick="rollTheDice()">Roll the Dice</button>
+            <button type="button" class="btn" onclick="editNames()">Edit Names</button>
+        </div>
+
+        <!-- Result will be displayed here -->
+        <h1 id="result"></h1>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
